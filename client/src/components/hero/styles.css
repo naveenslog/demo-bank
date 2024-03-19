@@ -1,0 +1,51 @@
+/* HeroSection.css */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4C3398;
+    /* Adjust the color to match the provided hero section */
+    color: white;
+    padding: 50px;
+    /* Adjust the padding as needed */
+}
+
+.text-container {
+    max-width: 50%;
+}
+
+.description {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.developed-by {
+    margin-bottom: 2em;
+}
+
+.sign-up-btn {
+    background-color: #FFFFFF;
+    /* This creates the white button background */
+    color: #4C3398;
+    /* This is the text color for the button */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up-btn:hover {
+    background-color: #e8e8e8;
+    /* Lighter background on hover */
+}
+
+.image-container {
+    /* Adjust to make sure image fits well within the design */
+    flex-grow: 1;
+    text-align: right;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}

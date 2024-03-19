@@ -1,0 +1,31 @@
+version: "3.7"
+
+volumes:
+  frontend:
+
+services:
+  client:
+    environment:
+      WATCHPACK_POLLING: "true"
+    env_file:
+      - ./client/.env.local
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    volumes:
+      - ./client/:/app/
+    ports:
+      - 3000:3000
+
+
+  server:
+    platform: linux/arm64
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    volumes:
+      - ./server/:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=development

@@ -1,0 +1,65 @@
+/* RegistrationPage.css */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5e2a84;
+    /* Adjust the background color to match your theme */
+}
+
+.registration-form {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-button {
+    background-color: #5e2a84;
+    /* Adjust the button color to match your theme */
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #4c3077;
+    /* A slightly darker shade for hover effect */
+}
+
+.registration-footer {
+    margin-top: 1em;
+}
+
+.registration-footer a {
+    color: #5e2a84;
+    /* Adjust the link color to match your theme */
+    text-decoration: none;
+    display: block;
+    /* Or inline-block, depending on your design */
+}
