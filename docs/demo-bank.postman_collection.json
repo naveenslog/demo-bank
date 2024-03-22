@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"naveen.singh@outlook.in\",\n    }",
+							"raw": "{\n    \"email\": \"\",\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
