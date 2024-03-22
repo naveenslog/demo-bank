@@ -134,15 +134,3 @@ class Transaction(TimeStampedModel):
     def __str__(self):
         string = f"{self.transaction_type} - {self.amount} - {self.account.account_number}"
         return string
-
-# @receiver(post_save, sender=User)
-# def create_user_account(sender, instance, created, **kwargs):
-#     if created:
-#         Account.objects.create(user=instance)
-#         send_mail(
-#             'Welcome to MockBank',
-#             'Your account has been created.',
-#             'from@example.com',
-#             [instance.email],
-#             fail_silently=False,
-#         )
