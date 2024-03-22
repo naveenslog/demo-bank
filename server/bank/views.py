@@ -7,6 +7,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import get_user_model
 from bank.serializers import UserSerializer, AccountSerializer, TransactionSerializer
 from bank.models import Account, Transaction
+from django.contrib.auth import get_user_model, authenticate
 
 User = get_user_model()
 
