@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f1d89d31-e086-4a87-8c75-4b629a5ab70d",
+		"_postman_id": "33cbc8fc-9cd7-47de-a30b-2a27f703d65c",
 		"name": "demo-bank",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "8771018"
@@ -46,7 +46,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"email\": \"naveen.singh@outlook.in\",\n    \"password\": \"Ronnin@14\"\n}",
+									"raw": "{\n    \"email\": \"naveen.singh@outlook.in\",\n    \"password\": \"\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -68,10 +68,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -82,7 +82,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"naveen.singh@outlook.in\",\n    \"password\": \"Test@2024\",\n    \"fullname\": \"Naveen Singh\"\n}",
+							"raw": "{\n    \"email\": \"naveen.singh@outlook.in\",\n    \"password\": \"\",\n    \"fullname\": \"Naveen Singh\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -119,7 +119,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"email\": \"naveen.singh@outlook.in\",\n    \"password\": \"Test@2024\",\n    \"fullname\": \"Naveen Singh\"\n}",
+									"raw": "{\n    \"email\": \"naveen.singh@outlook.in\",\n    \"password\": \"\",\n    \"fullname\": \"Naveen Singh\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -141,10 +141,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -189,12 +189,15 @@
 											"language": "json"
 										}
 									}
+								},
+								"url": {
+									"raw": ""
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -261,12 +264,15 @@
 											"language": "json"
 										}
 									}
+								},
+								"url": {
+									"raw": ""
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -399,10 +405,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -463,10 +469,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -527,10 +533,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				}
@@ -629,10 +635,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				}
