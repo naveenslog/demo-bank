@@ -24,7 +24,7 @@ const Layout = () => {
           flexDirection: "column",
           minHeight: "100vh",
           overflowY: "auto",
-          marginTop: "60px",
+          // marginTop: "60px",
         }}
       >
         {/* <Header /> */}
