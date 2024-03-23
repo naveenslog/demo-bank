@@ -123,7 +123,6 @@ class Account(TimeStampedModel):
 
 
 class Transaction(TimeStampedModel):
-
     transaction_type = models.CharField(max_length=50)
     amount = models.DecimalField(max_digits=12, decimal_places=2)
     account = models.ForeignKey(
@@ -134,3 +133,22 @@ class Transaction(TimeStampedModel):
     def __str__(self):
         string = f"{self.transaction_type} - {self.amount} - {self.account.account_number}"
         return string
+
+class Beneficiary(TimeStampedModel):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='beneficiaries')
+    nickname = models.CharField(max_length=20)
+
+    def __str__(self):
+        return f"{self.user.username}'s Beneficiary"
+
+# @receiver(post_save, sender=User)
+# def create_user_account(sender, instance, created, **kwargs):
+#     if created:
+#         Account.objects.create(user=instance)
+#         send_mail(
+#             'Welcome to MockBank',
+#             'Your account has been created.',
+#             'from@example.com',
+#             [instance.email],
+#             fail_silently=False,
+#         )
