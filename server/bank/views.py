@@ -5,8 +5,13 @@ from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import get_user_model
-from bank.serializers import UserSerializer, AccountSerializer, TransactionSerializer
-from bank.models import Account, Transaction
+from bank.serializers import (
+    UserSerializer,
+    AccountSerializer,
+    TransactionSerializer,
+    BeneficiarySerializer,
+)
+from bank.models import Account, Transaction, Beneficiary
 from django.contrib.auth import get_user_model, authenticate
 
 User = get_user_model()
@@ -49,6 +54,12 @@ class UserViewSet(viewsets.ModelViewSet):
 class AccountViewSet(viewsets.ModelViewSet):
     queryset = Account.objects.all()
     serializer_class = AccountSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class BeneficiaryViewSet(viewsets.ModelViewSet):
+    queryset = Beneficiary.objects.all()
+    serializer_class = BeneficiarySerializer
     permission_classes = [permissions.IsAuthenticated]
 
 
