@@ -1,0 +1,39 @@
+h2{
+    color: #0377BF;
+    margin-bottom: 20px;
+    font-size: 29px;
+    
+  
+  }
+  .lead{
+    font-size: 46px;
+    color:#333333;
+    font-weight: 900;
+  }
+  .title-popular-prod{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+    color: #0075be;
+  }
+  .headingsecond{
+    font-weight: 700;
+    color:#333333;
+  }
+  .hrLine{
+    content: '';
+    /* position: absolute; */
+    height: 4px;
+    background: #0075be;
+    left: 0 !important;
+    width: 150px;
+    top: 75px;
+  }
+  .heads{
+    font-size: 24px;
+    color:#333333;
+    font-weight: 700;
+  }
+  
+ 
