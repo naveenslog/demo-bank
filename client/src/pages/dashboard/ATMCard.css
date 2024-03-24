@@ -1,0 +1,86 @@
+/* VisaCard.css */
+.visa-card {
+    background: rgba(17, 17, 17, 0.8);
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    position: relative;
+    width: 70%;
+    height: 230px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    margin-top: 16px;
+}
+
+.card-content {
+    z-index: 10;
+}
+
+.card-check {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.card-number {
+    text-align: center;
+    margin-top: 75px;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.card-holder {
+    margin-top: 20px;
+    /* Adjust as needed */
+    font-size: 12px;
+    /* Adjust as needed */
+    letter-spacing: 1px;
+}
+
+.card-holder .name {
+    font-size: 16px;
+    /* Adjust as needed */
+    letter-spacing: 2px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    /* Adjust as needed */
+    font-size: 10px;
+    /* Adjust as needed */
+}
+
+.card-footer div {
+    letter-spacing: 1px;
+}
+
+.card-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+}
+
+.card-details {
+    display: inline-flex;
+    margin: 0 8px 0 8px;
+}
+
+.expires{
+    margin-right: 20px;
+}
+
+.card-detail-item{
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.dashboard-row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
