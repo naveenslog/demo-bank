@@ -1,0 +1,17 @@
+input,
+select,
+button {
+    width: 70% !important;
+    margin: 16px !important;
+}
+
+select {
+    height: 35px;
+    border: 1px solid #dee2e6;
+}
+
+label {
+    display: block !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}

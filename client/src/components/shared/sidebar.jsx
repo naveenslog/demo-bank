@@ -26,41 +26,26 @@ const Sidebar = () => {
   return (
     <>
       <div
-        // className={`${className}${appendClass}`}
         style={{
           width: "20vw",
           height: "100vh",
-          overflowY: "scroll",
+          overflowY: "auto",
         }}
       >
-        {/* {[
-          { icon: "home", name: "Home", route: "/" },
-          { icon: "dashboard", name: "Dashboard", route: "/dashboard" },
-          { icon: "login", name: "Login", route: "/login" },
-          { icon: "signup", name: "signup", route: "/register" },
-        ].map((item) => (
-          <MenuItem icon={item?.icon} name={item?.name} route={item?.route} />
-        ))} */}
         <nav id="sidebar">
           <div class="sidebar-header">
             <h3>Demo Bank</h3>
           </div>
-
+          <hr/>
           <ul class="list-unstyled components">
-            <li class="active">
-              <a href="/">Home</a>
-            </li>
             <li>
               <a href="/dashboard">Dashboard</a>
             </li>
             <li>
+              <a href="/transactions">Transactions</a>
+            </li>
+            <li>
               <a href="/beneficiaries">Beneficiaries</a>
-            </li>
-            <li>
-              <a href="/login">Login</a>
-            </li>
-            <li>
-              <a href="/register">Signup</a>
             </li>
           </ul>
         </nav>
