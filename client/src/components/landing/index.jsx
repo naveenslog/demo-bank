@@ -1,13 +1,14 @@
 import React from "react";
-// import { Button } from "react-bootstrap";
-import "./styles.css"; 
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import "./styles.css";
 
 function LandingSection() {
   return (
     <section id="hero" className="d-flex align-items-center">
       <div className="container mb-4">
         <div className="row">
-          <div className="col-lg-4 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          {/* Description Container */}
+          <div className="col-lg-4 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center desc">
             <h5>Bank Of India</h5>
             <h1 data-aos="fade-up">BOI CRAEDIT CARD SCHEME</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">
@@ -44,6 +45,7 @@ function LandingSection() {
             </div>
           </div>
 
+          {/* Image Container */}
           <div
             className="col-lg-8 order-1 order-lg-2 hero-img"
             data-aos="fade-left"
@@ -55,6 +57,26 @@ function LandingSection() {
               alt=""
             />
           </div>
+
+          {/* Social Links Container */}
+          {/* <div className="social-links fixed-bottom end-0 mb-4">
+            <div className="row-lg-1 row-md-6">
+              <div className="social-links d-flex flex-column">
+                <a href="#" className="twitter">
+                  <i className="bi bi-twitter"></i>
+                </a>
+                <a href="#" className="facebook">
+                  <i className="bi bi-facebook"></i>
+                </a>
+                <a href="#" className="instagram">
+                  <i className="bi bi-instagram"></i>
+                </a>
+                <a href="#" className="linkedin">
+                  <i className="bi bi-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div> */}
         </div>
       </div>
     </section>

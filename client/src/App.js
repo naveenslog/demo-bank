@@ -1,4 +1,4 @@
-import NavBar from "./components/nav";
+// import NavBar from "./components/nav";
 import PartnerSection from "./components/partner";
 import Layout from "./components/shared/layout";
 import Login from "./pages/login";
@@ -11,17 +11,24 @@ import PopularProduct from "./components/popularProduct";
 import Dashboard from "./pages/dashboard";
 import "./index.css";
 import Beneficiaries from "./pages/beneficiaries";
+import Navbar1 from "./components/navbar";
+import TopBar from "./components/topbar";
+import Contact from "./components/footer";
+import Testimonial from "./components/testimonial";
 import Transactions from "./pages/transactions";
 
 const Homepage = () => {
   return (
     <>
-      <NavBar />
+    {/* <TopBar/> */}
+      <Navbar1 />
       <LandingSection />
       <PopularProduct />
       <PopularOffers />
+      <Testimonial/>
       <Services />
-      <PartnerSection />
+      <Contact/>
+      {/* <PartnerSection /> */}
     </>
   );
 };
