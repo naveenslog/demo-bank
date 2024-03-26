@@ -1,18 +1,20 @@
-/* RegistrationPage.css */
 .registration-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #5e2a84;
-    /* Adjust the background color to match your theme */
+    margin-top: 100px;
+    background-color: white;
+}
+
+.registration-container h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .registration-form {
     background: white;
     padding: 2em;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -36,8 +38,7 @@
 }
 
 .register-button {
-    background-color: #5e2a84;
-    /* Adjust the button color to match your theme */
+    background-color: #3498DA;
     color: white;
     border: none;
     padding: 0.5em 1em;
@@ -48,8 +49,7 @@
 }
 
 .register-button:hover {
-    background-color: #4c3077;
-    /* A slightly darker shade for hover effect */
+    background-color: black;
 }
 
 .registration-footer {
@@ -57,9 +57,7 @@
 }
 
 .registration-footer a {
-    color: #5e2a84;
-    /* Adjust the link color to match your theme */
+    color: #3498DA;
     text-decoration: none;
     display: block;
-    /* Or inline-block, depending on your design */
 }

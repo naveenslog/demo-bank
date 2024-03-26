@@ -10,6 +10,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.core.mail import send_mail
 
+
 class UserManager(BaseUserManager):
     use_in_migrations = True
 
@@ -131,15 +132,21 @@ class Transaction(TimeStampedModel):
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        string = f"{self.transaction_type} - {self.amount} - {self.account.account_number}"
+        string = (
+            f"{self.transaction_type} - {self.amount} - {self.account.account_number}"
+        )
         return string
 
+
 class Beneficiary(TimeStampedModel):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='beneficiaries')
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="beneficiaries"
+    )
     nickname = models.CharField(max_length=20)
 
     def __str__(self):
         return f"{self.user.username}'s Beneficiary"
+
 
 # @receiver(post_save, sender=User)
 # def create_user_account(sender, instance, created, **kwargs):

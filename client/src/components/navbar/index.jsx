@@ -5,19 +5,18 @@ import { Navbar } from "react-bootstrap";
 function CustomNavbar() {
   return (
     <>
-      <div className="navhead">
-        <header id="header" className="fixed-top d-flex align-items-center">
-          <div className="container d-flex align-items-center justify-content-between">
-            <Navbar.Brand href="/">
-              <img
-                src="https://bankofindia.co.in/o/boi-global-theme/images/boi/logos/boi_en_US_logo.png"
-                alt="MockBank Logo"
-              />
-            </Navbar.Brand>
+      <header id="header" className="fixed-top d-flex align-items-center">
+        <div className="logo container d-flex align-items-center justify-content-between">
+          <Navbar.Brand href="/">
+            <img
+              src="https://bankofindia.co.in/o/boi-global-theme/images/boi/logos/boi_en_US_logo.png"
+              alt="Logo"
+            />
+          </Navbar.Brand>
 
-            <nav id="navbar" className="navbar">
-              <ul>
-                <li>
+          <nav id="navbar" className="navbar">
+            <ul>
+              {/* <li>
                   <a className="nav-link scrollto active" href="#hero">
                     Home
                   </a>
@@ -94,19 +93,17 @@ function CustomNavbar() {
                   <a className="nav-link scrollto" href="#contact">
                     Contact
                   </a>
-                </li>
-                <li>
-                  <a className="getstarted scrollto" href="#about">
-                    INTERNET BANKING
-                  </a>
-                </li>
-              </ul>
-              <i className="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-          </div>
-        </header>
-      </div>
-      <div className="height"></div>
+                </li>*/}
+              <li>
+                <a className="getstarted scrollto" href="/login">
+                  Login
+                </a>
+              </li>
+            </ul>
+            <i className="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+      </header>
     </>
   );
 }

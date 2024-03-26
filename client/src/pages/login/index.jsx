@@ -8,6 +8,8 @@ import {
   showFailureToastMessage,
   showSuccessToastMessage,
 } from "../../helpers/others";
+import CustomNavbar from "../../components/navbar";
+import Footer from "../../components/footer";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -39,41 +41,45 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-container">
-      <form className="login-form" onSubmit={handleLogin}>
-        <h2>Login</h2>
-        <div className="input-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData?.email}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <div className="input-group">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData?.password}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <button type="submit" className="login-button">
-          Log in
-        </button>
-        <div className="login-footer">
-          <a href="/forgot-password">Forgot password?</a>
-          <a href="/register">Don't have an account? Sign Up</a>
-        </div>
-      </form>
-      <ToastContainer />
-    </div>
+    <>
+      <CustomNavbar />
+      <div className="login-container">
+        <form className="login-form" onSubmit={handleLogin}>
+          <h2>Login</h2>
+          <div className="input-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData?.email}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData?.password}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <button type="submit" className="login-button">
+            Log in
+          </button>
+          <div className="login-footer">
+            <a href="/forgot-password">Forgot password?</a>
+            <a href="/register">Don't have an account? Sign Up</a>
+          </div>
+        </form>
+        <ToastContainer />
+      </div>
+      <Footer />
+    </>
   );
 };
 

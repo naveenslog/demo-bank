@@ -31,6 +31,7 @@ export function buildHeaders(authorize = false, extraHeaders = {}) {
     const token = localStorage.getItem("access");
     headers = { ...headers, Authorization: `Bearer ${token}` };
   }
+
   return { ...headers, ...extraHeaders };
 }
 
@@ -50,15 +51,15 @@ export function post(uri, body = {}) {
     .then((response) => response);
 }
 
-export function authorizedGet({ uri, params = {} }) {
+export function authorizedGet(uri, params = {}) {
   const opt = {
     params,
     headers: buildHeaders(true),
   };
-  return axios.get(`${host}${uri}`, opt).then((response) => response.data);
+  return axios.get(`${host}${uri}`, opt).then((response) => response);
 }
 
-export function authorizedPost({ uri, params, body = {} }) {
+export function authorizedPost(uri, params, body = {}) {
   const options = {
     params,
     headers: buildHeaders(true, { "X-CSRFToken": getCookie("csrftoken") }),
@@ -66,20 +67,20 @@ export function authorizedPost({ uri, params, body = {} }) {
 
   return axios
     .post(`${host}${uri}`, body, options)
-    .then((response) => response.data);
+    .then((response) => response);
 }
 
-export function authorizedDelete({ uri, params }) {
+export function authorizedDelete(uri, params) {
   const options = {
     params,
     headers: buildHeaders(true, { "X-CSRFToken": getCookie("csrftoken") }),
   };
   return axios
     .delete(`${host}${uri}`, options)
-    .then((response) => response.data);
+    .then((response) => response);
 }
 
-export function authorizedPatch({ uri, params, body = {} }) {
+export function authorizedPatch(uri, params, body = {}) {
   const options = {
     params,
     headers: buildHeaders(true, { "X-CSRFToken": getCookie("csrftoken") }),
@@ -89,7 +90,7 @@ export function authorizedPatch({ uri, params, body = {} }) {
     .then((response) => response.data);
 }
 
-export function authorizedPostUpload({ uri, body = {}, params }) {
+export function authorizedPostUpload(uri, body = {}, params) {
   const options = {
     params,
     headers: buildHeaders(true, {
@@ -102,7 +103,7 @@ export function authorizedPostUpload({ uri, body = {}, params }) {
     .then((response) => response.data);
 }
 
-export function authorizedPatchUpload({ uri, body = {}, params }) {
+export function authorizedPatchUpload(uri, body = {}, params) {
   const options = {
     params,
     headers: buildHeaders(true, {
@@ -115,7 +116,7 @@ export function authorizedPatchUpload({ uri, body = {}, params }) {
     .then((response) => response.data);
 }
 
-export function authorizedFileDownload({ uri, fileType, fileName }) {
+export function authorizedFileDownload(uri, fileType, fileName) {
   const opt = {
     headers: buildHeaders(true),
   };
