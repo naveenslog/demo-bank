@@ -16,7 +16,7 @@ const Dashboard = () => {
             <ATMCard />
           </div>
           <div className="col" style={{ height: 240 }}>
-            <h3>Cashflow</h3>
+            <h3>Cashflow <span style={{ color: "blue" }}> - Current Banance 10000</span></h3>
             <Cashflow />
           </div>
         </div>

@@ -11,6 +11,7 @@ import PopularProduct from "./components/popularProduct";
 import Dashboard from "./pages/dashboard";
 import "./index.css";
 import Beneficiaries from "./pages/beneficiaries";
+import Transactions from "./pages/transactions";
 
 const Homepage = () => {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/register" element={<Signup />} />
         <Route path="/" element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/transactions" element={<Transactions />} />
           <Route path="/beneficiaries" element={<Beneficiaries />} />
         </Route>
       </Routes>

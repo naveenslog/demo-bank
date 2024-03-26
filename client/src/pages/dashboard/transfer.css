@@ -1,6 +1,6 @@
-input,
-select,
-button {
+.quick-transfer-input,
+.quick-transfer-select,
+.quick-transfer-button {
     width: 70% !important;
     margin: 16px !important;
 }
