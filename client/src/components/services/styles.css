@@ -1,6 +1,15 @@
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+.services {
+  margin-top: 50px;
+}
+
+.services .section-title {
+  margin-bottom: 50px;
+}
+
 .services .icon-box {
   padding: 30px;
   position: relative;
@@ -10,6 +19,14 @@
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+}
+
+.services svg {
+  fill: white;
+}
+
+.single-box:hover svg {
+  fill: #3498db;
 }
 
 .services .icon-box::before {
@@ -35,10 +52,11 @@
 }
 
 .services .icon {
-  margin: 0 auto 20px auto;
-  padding-top: 10px;
-  display: inline-block;
+  margin-bottom: 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -80,4 +98,3 @@
 .services .icon-box:hover .icon i {
   color: #3498db;
 }
-

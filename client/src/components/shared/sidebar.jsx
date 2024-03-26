@@ -12,11 +12,11 @@ const Sidebar = () => {
         }}
       >
         <nav id="sidebar">
-          <div class="sidebar-header">
+          <div className="sidebar-header">
             <h3>Demo Bank</h3>
           </div>
           <hr />
-          <ul class="list-unstyled components">
+          <ul className="list-unstyled components">
             <li>
               <a href="/dashboard">Dashboard</a>
             </li>
@@ -27,7 +27,7 @@ const Sidebar = () => {
               <a href="/beneficiaries">Beneficiaries</a>
             </li>
           </ul>
-          <div class="" style={{position: "absolute", bottom: "30px", padding: "20px 0 0 16px"}}>
+          <div className="" style={{position: "absolute", bottom: "30px", padding: "20px 0 0 16px"}}>
             <div>
               <a href="#">Logout</a>
             </div>

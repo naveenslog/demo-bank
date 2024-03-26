@@ -1,5 +1,3 @@
-// import NavBar from "./components/nav";
-import PartnerSection from "./components/partner";
 import Layout from "./components/shared/layout";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
@@ -11,24 +9,19 @@ import PopularProduct from "./components/popularProduct";
 import Dashboard from "./pages/dashboard";
 import "./index.css";
 import Beneficiaries from "./pages/beneficiaries";
-import Navbar1 from "./components/navbar";
-import TopBar from "./components/topbar";
-import Contact from "./components/footer";
-import Testimonial from "./components/testimonial";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import Transactions from "./pages/transactions";
 
 const Homepage = () => {
   return (
     <>
-    {/* <TopBar/> */}
-      <Navbar1 />
+      <Navbar />
       <LandingSection />
       <PopularProduct />
       <PopularOffers />
-      <Testimonial/>
       <Services />
-      <Contact/>
-      {/* <PartnerSection /> */}
+      <Footer />
     </>
   );
 };
@@ -38,8 +31,8 @@ function App() {
     <Router>
       <Routes>
         <Route index element={<Homepage />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/transactions" element={<Transactions />} />

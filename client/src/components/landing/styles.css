@@ -1,17 +1,17 @@
 body {
-    font-family: "Open Sans", sans-serif, "Montserrat";
-    color: #444444;
-  }
-  
-  a {
-    color: #3498db;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #5faee3;
-    text-decoration: none;
-  }
+  font-family: "Open Sans", sans-serif, "Montserrat";
+  color: #444444;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5faee3;
+  text-decoration: none;
+}
 
 
 
@@ -20,17 +20,19 @@ body {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
-  margin-top: 70px;
+  /* height: 70vh; */
+  margin-top: 100px;
+  position: relative;
 }
-#hero h5{
-  font-weight: 700;
-  color:#484848
 
+#hero h5 {
+  font-weight: 700;
+  color: #484848
 }
+
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 56px;
   color: #0377BF;
@@ -89,9 +91,14 @@ body {
   }
 }
 
-.imgRadius{
+.imgRadius {
   border-bottom-right-radius: 90px;
 }
+.imgRadiusLeft {
+  border-bottom-left-radius: 90px;
+}
+
+
 
 @media (max-width: 768px) {
   #hero {
@@ -101,7 +108,7 @@ body {
   #hero h1 {
     font-size: 25px;
     line-height: 36px;
-    color:#0377BF;
+    color: #0377BF;
   }
 
   #hero h2 {
@@ -111,7 +118,7 @@ body {
   }
 
   #hero .hero-img img {
-    width: 70%;
+    width: 60% !important;
   }
 }
 
@@ -132,13 +139,13 @@ body {
 }
  */
 .savings-content {
-  margin-top: 100px; 
+  margin-top: 100px;
 }
 
 .savings-content h1 {
-  font-size: 2rem; 
+  font-size: 2rem;
 }
- 
+
 
 
 /* Social */
@@ -156,18 +163,22 @@ body {
   border-radius: 50%;
   margin-bottom: 20px;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s; /* Adding transition for smooth effect */
+  transition: background-color 0.3s, color 0.3s;
+  /* Adding transition for smooth effect */
 }
 
 .bg-blue {
   background-color: blue;
-  color: white; /* Initial color */
+  color: white;
+  /* Initial color */
 }
 
 /* Hover effect */
 .social-icon:hover {
-  background-color: lightblue; /* Change background color on hover */
-  color: black; /* Change icon color on hover */
+  background-color: lightblue;
+  /* Change background color on hover */
+  color: black;
+  /* Change icon color on hover */
 }
 
 
@@ -176,7 +187,7 @@ body {
   padding-bottom: 20px;
 }
 
- .social-links a {
+.social-links a {
   font-size: 18px;
   display: inline-block;
   background: #fff;
@@ -196,6 +207,7 @@ body {
   background: #3498db;
   color: #fff;
 }
+
 .social-links {
   display: flex;
   /* flex-direction: column; */
@@ -204,4 +216,3 @@ body {
 .social-links a {
   margin-bottom: 13px;
 }
-

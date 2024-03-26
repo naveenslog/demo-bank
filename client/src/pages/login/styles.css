@@ -3,17 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #5e2a84;
+    background-color: white;
     text-align: center;
-    /* Adjust the background color to match your theme */
+    margin-top: 120px;
 }
 
 .login-form {
     background: white;
     padding: 2em;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -26,6 +25,7 @@
 
 .input-group label {
     display: block;
+    padding: 0px !important;
     margin-bottom: 0.5em;
 }
 
@@ -37,8 +37,7 @@
 }
 
 .login-button {
-    background-color: #5e2a84;
-    /* Adjust the button color to match your theme */
+    background-color: #3498DA;
     color: white;
     border: none;
     padding: 0.5em 1em;
@@ -49,8 +48,7 @@
 }
 
 .login-button:hover {
-    background-color: #4c3077;
-    /* A slightly darker shade for hover effect */
+    background-color: black;
 }
 
 .login-footer {
@@ -58,7 +56,7 @@
 }
 
 .login-footer a {
-    color: #5e2a84;
+    color: #3498DA;
     /* Adjust the link color to match your theme */
     text-decoration: none;
     display: block;
@@ -67,4 +65,9 @@
 
 .login-footer a:not(:last-child) {
     margin-bottom: 0.5em;
+}
+
+.login-container h2{
+    margin-bottom: 20px;
+    font-weight: bold;
 }

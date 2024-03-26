@@ -1,5 +1,6 @@
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import moment from "moment-timezone";
 
 export function downloadURI(uri, name) {
   var link = document.createElement("a");
@@ -24,4 +25,10 @@ export const showFailureToastMessage = (message) => {
     position: "top-right",
     autoClose: 5000,
   });
+};
+
+export const formatDate = (dateString) => {
+  // Parse the date string using moment-timezone
+  const formattedDate = moment(dateString).format("DD-MM-YYYY");
+  return formattedDate;
 };
