@@ -15,6 +15,7 @@ import Navbar1 from "./components/navbar";
 import TopBar from "./components/topbar";
 import Contact from "./components/footer";
 import Testimonial from "./components/testimonial";
+import Transactions from "./pages/transactions";
 
 const Homepage = () => {
   return (
@@ -22,7 +23,6 @@ const Homepage = () => {
     {/* <TopBar/> */}
       <Navbar1 />
       <LandingSection />
-
       <PopularProduct />
       <PopularOffers />
       <Testimonial/>
@@ -42,6 +42,7 @@ function App() {
         <Route path="/register" element={<Signup />} />
         <Route path="/" element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/transactions" element={<Transactions />} />
           <Route path="/beneficiaries" element={<Beneficiaries />} />
         </Route>
       </Routes>

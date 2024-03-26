@@ -1,29 +1,23 @@
 import React from "react";
-import BeneficiariesCards from "./cards";
 import TitleWrapper from "../../components/shared/title-wrapper";
+import DataTable from "./table";
 
-const data = [
-  { account: "10890909", nickname: "Sumit Saurav" },
-  { account: "23456788", nickname: "Ravi Kumar" },
-  { account: "90738233", nickname: "Michael Jhonson" },
-]
-
-const Beneficiaries = () => {
+const Transactions = () => {
   const handleAddBeneficiary = () => { };
 
   return (
     <>
-      <TitleWrapper title={"Beneficiaries"} />
+      <TitleWrapper title={"Transactions"} />
       <div className="container" style={{ padding: 16 }}>
         <div className="row" style={{ justifyContent: "flex-end" }}>
           <button className="btn btn-primary mb-3" style={{ width: 200, marginRight: 37 }} onClick={handleAddBeneficiary}>
-            Add New Beneficiaries
+            Export Data
           </button>
         </div>
-        <BeneficiariesCards data={data} />
+        <DataTable/>
       </div>
     </>
   );
 };
 
-export default Beneficiaries;
+export default Transactions;
