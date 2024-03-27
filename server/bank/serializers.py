@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import User, Account, Transaction
+from .models import User, Account, Transaction, Beneficiary
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -22,9 +22,7 @@ class UserSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = ["id", "account_no", "balance", "full_address"]
         extra_kwargs = {
-            "username": {
-                "validators": []
-            },
+            "username": {"validators": []},
         }
 
 
@@ -61,13 +59,16 @@ class TransactionSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = ["id", "created_at", "updated_at"]
 
+
 class BeneficiarySerializer(serializers.ModelSerializer):
+    account = AccountSerializer(read_only=True)
     user = UserSerializer(read_only=True)
 
     class Meta:
-        model = Transaction
+        model = Beneficiary
         fields = [
             "id",
+            "account",
             "user",
             "nickname",
             "created_at",
@@ -76,9 +77,9 @@ class BeneficiarySerializer(serializers.ModelSerializer):
         read_only_fields = ["id", "created_at", "updated_at"]
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.your_email_service.com'
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.your_email_service.com"
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'your_email@example.com'
-EMAIL_HOST_PASSWORD = 'your_email_password'
+EMAIL_HOST_USER = "your_email@example.com"
+EMAIL_HOST_PASSWORD = "your_email_password"

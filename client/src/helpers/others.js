@@ -12,10 +12,14 @@ export function downloadURI(uri, name) {
   document.body.removeChild(link);
 }
 
-export const showSuccessToastMessage = (message, progress = true) => {
+export const showSuccessToastMessage = (
+  message,
+  progress = true,
+  autoClose = 5000
+) => {
   toast.success(message, {
     position: "top-right",
-    autoClose: 5000,
+    autoClose: autoClose,
     hideProgressBar: progress,
   });
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import "./styles.css";
 
 function LandingSection() {

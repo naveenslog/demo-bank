@@ -47,39 +47,6 @@ const Transactions = () => {
     FileSaver.saveAs(data, "transactions" + fileExtension);
   };
 
-  // const handleExportData = () => {
-  //   const extractedTransactions = transactions.map(
-  //     ({ id, transaction_type, amount, description, created_at }) => ({
-  //       id,
-  //       transaction_type,
-  //       amount,
-  //       description,
-  //       created_at,
-  //     })
-  //   );
-
-  //   const extractedTransactionsJSON = JSON.stringify(
-  //     extractedTransactions,
-  //     null,
-  //     2
-  //   );
-  //   console.log(extractedTransactionsJSON);
-  //   const worksheet = XLSX.utils.json_to_sheet(extractedTransactions);
-  //   const workbook = XLSX.utils.book_new();
-  //   XLSX.utils.book_append_sheet(workbook, worksheet, "Sheet1");
-
-  //   // Buffer to store the generated Excel file
-  //   const excelBuffer = XLSX.write(workbook, {
-  //     bookType: "xlsx",
-  //     type: "array",
-  //   });
-  //   const blob = new Blob([excelBuffer], {
-  //     type:
-  //       "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8",
-  //   });
-  //   saveAs(blob, "data.xlsx");
-  // };
-
   return loading ? (
     <p>Loading...</p>
   ) : (

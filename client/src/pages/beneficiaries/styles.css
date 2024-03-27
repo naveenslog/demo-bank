@@ -1,4 +1,53 @@
-.beneficiaries-add-btn{
+.beneficiaries-add-btn {
     width: 100px !important;
     margin-right: 16px;
+}
+
+.add-beneficiary h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.add-beneficiary .close-btn {
+    float: right;
+    cursor: pointer;
+}
+
+.add-beneficiary .login-form {
+    padding: 1em;
+}
+
+.beneficiary-dialog {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.verify {
+    cursor: pointer;
+    color: #3498D9;
+    text-align: end;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.username {
+    cursor: pointer;
+    color: green;
+    text-align: end;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.verified {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: green;
+    margin-bottom: 10px;
 }

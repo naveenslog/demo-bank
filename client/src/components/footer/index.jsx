@@ -11,7 +11,7 @@ function Footer() {
               <div className="col-xl-6 col-lg-4 col-sm-12">
                 <div className="f-about">
                   <div className="footer-logo">
-                    <a href="javascript:void(0)">
+                    <a href="/">
                       <img
                         src="https://bankofindia.co.in/o/boi-global-theme/images/boi/logos/boi_en_US_logo.png"
                         alt="Logo"
@@ -29,16 +29,16 @@ function Footer() {
                   <h6 className="footer-title">Company</h6>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">About</a>
+                      <a href="/">About</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Contact</a>
+                      <a href="/">Contact</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Marketing</a>
+                      <a href="/">Marketing</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Awards</a>
+                      <a href="/">Awards</a>
                     </li>
                   </ul>
                 </div>
@@ -48,16 +48,16 @@ function Footer() {
                   <h6 className="footer-title">Services</h6>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">Products</a>
+                      <a href="/">Products</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Business</a>
+                      <a href="/">Business</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Developer</a>
+                      <a href="/">Developer</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Insights</a>
+                      <a href="/">Insights</a>
                     </li>
                   </ul>
                 </div>
@@ -101,9 +101,9 @@ function Footer() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="feather feather-smartphone"
                       >
                         <rect

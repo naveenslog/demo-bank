@@ -87,6 +87,7 @@
 }
 
 .services .icon-box:hover .title a,
+.services .icon-box:hover .title,
 .services .icon-box:hover .description {
   color: #fff;
 }

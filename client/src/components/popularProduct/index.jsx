@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import "./styles.css";
 
 const PopularProduct = () => {
@@ -35,9 +34,9 @@ const PopularProduct = () => {
                     House, to
                   </p>
                 </div>
-                <a href="#" className="btn btn-primary">
+                {/* <a href="#" className="btn btn-primary">
                   Know More
-                </a>
+                </a> */}
               </div>
 
               {/* IMAGE */}
@@ -68,9 +67,9 @@ const PopularProduct = () => {
                     House, to
                   </p>
                 </div>
-                <a href="#" className="btn btn-primary">
+                {/* <a href="#" className="btn btn-primary">
                   Know More
-                </a>
+                </a> */}
               </div>
 
               {/* IMAGE */}
