@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import "./styles.css";
 
 const Services = () => {
@@ -35,7 +34,7 @@ const Services = () => {
                   </svg>
                 </div>
                 <h4 className="title">
-                  <a href="">Lorem Ipsum</a>
+                  Lorem Ipsum
                 </h4>
 
                 <p className="description">
@@ -58,7 +57,7 @@ const Services = () => {
                   </svg>
                 </div>
                 <h4 className="title">
-                  <a href="">Sed ut perspiciatis</a>
+                  Sed ut perspiciatis
                 </h4>
                 <p className="description">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -80,7 +79,7 @@ const Services = () => {
                   </svg>
                 </div>
                 <h4 className="title">
-                  <a href="">Magni Dolores</a>
+                  Magni Dolores
                 </h4>
                 <p className="description">
                   Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -102,7 +101,7 @@ const Services = () => {
                   </svg>
                 </div>
                 <h4 className="title">
-                  <a href="">Nemo Enim</a>
+                  Nemo Enim
                 </h4>
                 <p className="description">
                   At vero eos et accusamus et iusto odio dignissimos ducimus qui

@@ -29,7 +29,7 @@ const Sidebar = () => {
           </ul>
           <div className="" style={{position: "absolute", bottom: "30px", padding: "20px 0 0 16px"}}>
             <div>
-              <a href="#">Logout</a>
+              <a href="/login">Logout</a>
             </div>
           </div>
         </nav>

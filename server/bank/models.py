@@ -121,7 +121,10 @@ class Account(TimeStampedModel):
 
     def __str__(self):
         return f"{self.user.username} - {self.account_type} - {self.account_number}"
-
+    
+    @classmethod
+    def get_user_accounts(cls, user):
+        return cls.objects.filter(user=user).first()
 
 class Transaction(TimeStampedModel):
     transaction_type = models.CharField(max_length=50)
@@ -139,6 +142,9 @@ class Transaction(TimeStampedModel):
 
 
 class Beneficiary(TimeStampedModel):
+    account = models.ForeignKey(
+        Account, on_delete=models.CASCADE, related_name="beneficiaries"
+    )
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="beneficiaries"
     )

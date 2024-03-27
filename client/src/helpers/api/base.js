@@ -59,7 +59,7 @@ export function authorizedGet(uri, params = {}) {
   return axios.get(`${host}${uri}`, opt).then((response) => response);
 }
 
-export function authorizedPost(uri, params, body = {}) {
+export function authorizedPost(uri, body = {}, params) {
   const options = {
     params,
     headers: buildHeaders(true, { "X-CSRFToken": getCookie("csrftoken") }),
@@ -75,9 +75,7 @@ export function authorizedDelete(uri, params) {
     params,
     headers: buildHeaders(true, { "X-CSRFToken": getCookie("csrftoken") }),
   };
-  return axios
-    .delete(`${host}${uri}`, options)
-    .then((response) => response);
+  return axios.delete(`${host}${uri}`, options).then((response) => response);
 }
 
 export function authorizedPatch(uri, params, body = {}) {
