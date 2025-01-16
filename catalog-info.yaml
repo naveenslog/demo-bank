@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-bank
+  description: "A demo banking application with a React frontend and Django backend."
+  tags:
+    - react
+    - python
+    - django
+    - sqlite
+    - docker
+spec:
+  type: service
+  lifecycle: experimental
+  owner: naveensingh
+  system: demo-bank-system
+  providesApis:
+    - demo-bank-server-api
+  definition:
+    - $file: ./docs/demo-bank.postman_collection.json
+  links:
+    - url: https://github.com/your-org/demo-bank
+      title: Source Code
+    - url: http://demo-bank-docs.example.com
+      title: API Documentation
+
+relationships:
+  - type: consumesApi
+    targetRef: other-service-api
