@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-demobank
+  description: "The team responsible for the development and maintenance of the demo-bank application."
+  tags:
+    - engineering
+    - development
+spec:
+  type: team
+  lifecycle: experimental
+  parent: engineering
+  children:
+    - team-frontend
+    - team-backend
+  members:
+    - naveenslog
+    - john.doe
+    - jane.doe
