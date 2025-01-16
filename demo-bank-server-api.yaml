@@ -10,6 +10,5 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: naveensingh
-  definition:
-    $file: ./docs/demo-bank.postman_collection.json
+  owner: team-demo-bank
+  definition: https://raw.githubusercontent.com/naveenslog/demo-bank/main/docs/demo-bank.postman_collection.json

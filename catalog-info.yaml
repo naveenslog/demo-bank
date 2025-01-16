@@ -11,7 +11,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/naveenslog/demo-bank
 spec:
-  type: service
+  type: website
   lifecycle: experimental
   owner: team-demo-bank
   providesApis:
